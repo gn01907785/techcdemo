@@ -9,13 +9,22 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     
-    <script src="bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="row">
         <div class="content col-xs-12">
+            <p class="count">0</p>
             <a class="button">Click me!</a>
         </div>
     </div>
+    
+    <script>
+        var count = 1;
+        $('.button').click(function() {
+            $('.count').html(count++);
+        });
+    </script>
 </body>
 </html>
