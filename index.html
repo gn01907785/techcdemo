@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <title>TECH.C. Game Demo</title>
     
+    <meta name="viewport" content="width=device-width,user-scalable=no,initical-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     
-    <script src="bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="row">
-        <div class="content col-xs-12">
-            <p>Welcome</p>
+        <div class="content col-xs-10 col-xs-offset-1">
+            <p class="count">0</p>
+            <a class="button">Click me!</a>
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1">
+<div class="panel panel-default">
+                <div class="panel-heading">submit your score!</div>
+                <div class="panel-body">
+                    <form action="send.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Nickname</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="">
+                        </div>
+                        <input type="hidden" name="score">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <script>
+        var count = 1;
+        $('.button').click(function() {
+            $('.count').html(count++);
+            $('input[name=score]').val(count);
+        });
+    </script>
 </body>
 </html>
