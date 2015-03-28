@@ -22,15 +22,31 @@ $rows = mysqli_query($db, 'SELECT * FROM scores ORDER BY score DESC');
             <h1>Winner!</h1>
 
             <table class="table">
-                <?php $count = 1; ?>
-                <?php foreach ($rows as $row): ?>
-                    <tr>
-                        <th>No.<?php echo $count++; ?></th>
-                        <td><?php echo htmlspecialchars($row['name']); ?></td>
-                        <td><?php echo $row['score']; ?>point</td>
-                    </tr>
-                    <?php if ($count > 5) break; ?>
-                <?php endforeach; ?>
+                <tr>
+                    <th width="10">No.1</th>
+                    <td>Taro</td>
+                    <td>80 point</td>
+                </tr>
+                <tr>
+                    <th>No.2</th>
+                    <td>Yoshiko</td>
+                    <td>65 point</td>
+                </tr>
+                <tr>
+                    <th>No.3</th>
+                    <td>Hana</td>
+                    <td>24 point</td>
+                </tr>
+                <tr>
+                    <th>No.4</th>
+                    <td>Aoi</td>
+                    <td>22 point</td>
+                </tr>
+                <tr>
+                    <th>No.5</th>
+                    <td>Nick</td>
+                    <td>10 point</td>
+                </tr>
             </table>            
             </ol>
         </div>
