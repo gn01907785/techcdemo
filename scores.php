@@ -37,16 +37,6 @@ $rows = mysqli_query($db, 'SELECT * FROM scores ORDER BY score DESC');
                     <td>Hana</td>
                     <td>24 point</td>
                 </tr>
-                <tr>
-                    <th>No.4</th>
-                    <td>Aoi</td>
-                    <td>22 point</td>
-                </tr>
-                <tr>
-                    <th>No.5</th>
-                    <td>Nick</td>
-                    <td>10 point</td>
-                </tr>
             </table>            
             </ol>
         </div>
