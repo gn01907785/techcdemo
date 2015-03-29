@@ -15,21 +15,3 @@ body {
     font-size: 42px;
     margin-bottom: 30px;
 }
-
-.button {
-    border: 1px solid #fff;
-    padding: 15px;
-    background: #fff;
-    border-radius: 8px;
-    color: #6f5499;
-    text-shadow: -1px -1px 0 #666;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, .3);
-    display: block;
-    width: 300px;
-    font-size: 30px;
-    margin: 0 auto 30px;
-}
-.button:hover {
-    color: #ccc;
-    text-decoration: none;
-}
